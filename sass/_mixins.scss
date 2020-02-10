@@ -1,0 +1,4 @@
+@mixin faceOpacity($opacityStart,$opacityEnd) {
+    from {opacity: $opacityStart} 
+    to {opacity: $opacityEnd}
+  }
