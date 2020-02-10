@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercice 1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <section class="global">
+            <h1>exercice1</h1>
+            <h2>introduction a Sass</h2>
+        </section>
+    </header>
+    <nav>
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <ul class="global">
+            <li><a href="">Lorem.</a></li>
+            <li><a href="">Eligendi</a></li>
+            <li><a href="">Quasi</a></li>
+            <li><a href="">At!</a></li>
+            <li><a href="">Ducimus.</a></li>
+            <li><a href="">Repellendus!</a></li>
+            <li><a href="">Debitis.</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="global">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum explicabo consequatur distinctio neque, sint, excepturi accusamus modi saepe fugiat maiores recusandae id sapiente nihil suscipit, ipsam alias laudantium! Consequuntur voluptate cum facilis cumque labore repellat, inventore itaque adipisci ut natus!</p>
+            <p>Ipsa explicabo ad nihil expedita ratione. Illo ipsum numquam eaque, reiciendis eos optio ratione neque provident, quia reprehenderit qui unde enim quam quidem accusantium quibusdam, repellendus perferendis officia dicta facilis expedita voluptatem est corporis. Blanditiis mollitia ut quod vel autem</p>
+            <p>Temporibus iure aut voluptatibus praesentium, eos repellendus hic ex consequuntur deleniti animi amet? Eveniet, quidem! Illum eligendi, cupiditate impedit possimus exercitationem, ipsa provident, voluptatibus eum fugit culpa quisquam optio adipisci veritatis ea molestias repudiandae illo aspernatur eaque quod corporis. Labore.</p>
+            <p>Dolorum architecto eos sed. Ratione eum perspiciatis eligendi amet quidem quis, quia odit iste aliquid excepturi dignissimos modi fugit suscipit accusantium ipsum deleniti unde tempore? Laborum iste sapiente laudantium sed, voluptatibus necessitatibus enim, praesentium in nemo illo, tempore autem harum?</p>
+            <p>Minus, libero. Voluptas culpa provident architecto nobis voluptates asperiores impedit ipsa doloremque, dicta commodi voluptatum reiciendis temporibus voluptate minus earum dolorum ullam mollitia alias deleniti incidunt totam. Est modi sunt magnam iusto iure eos mollitia. Vitae, quaerat magnam. Soluta, tempora!</p>
+        </section>
+    </main>
+    <footer>
+        <section class="global">
+            <ul>
+                <li>Lorem, ipsum</li>
+                <li>Voluptates, ex</li>
+                <li>A, explicabo</li>
+                <li>Impedit, ducimus</li>
+                <li>Beatae, sapiente!</li>
+            </ul>
+            <ul>
+                <li>Tempora, maiores</li>
+                <li>Ullam, culpa</li>
+                <li>Ipsa, iste</li>
+                <li>Nihil, aliquam</li>
+                <li>Voluptates, cupiditate</li>
+            </ul>
+            <ul>
+                <li>Fuga, laudantium</li>
+                <li>Reiciendis, ad</li>
+                <li>Hic, culpa!</li>
+                <li>Ex, est</li>
+                <li>Minima, in</li>
+            </ul>
+            <ul>
+                <li>Assumenda, molestias</li>
+                <li>Voluptates, eligendi</li>
+                <li>Voluptate, labore</li>
+                <li>Esse, nihil</li>
+                <li>Earum, ex</li>
+            </ul>
+        </section>
+    </footer>
+</body>
+<script>
+    function myFunction(x) {
+        x.classList.toggle("change");
+        var element = document.querySelector("nav");
+        element.classList.toggle("nav-height");
+        var elementUl = document.querySelector("ul");
+        elementUl.classList.toggle("ul-opacity");
+        var elementHeader = document.querySelector("header");
+        elementHeader.classList.toggle("header-block");
+        var hiddenBoddy = document.querySelector("body");
+        hiddenBoddy.classList.toggle("body-hidden");
+        var hiddenBoddy = document.querySelector("body");
+        hiddenBoddy.classList.toggle("body-hidden");
+        var section2 = document.querySelector("main section:nth-of-type(1)");
+        section2.classList.toggle("header-block");
+        var footer = document.querySelector("footer");
+        footer.classList.toggle("header-block");
+    }   
+</script>
+</html>

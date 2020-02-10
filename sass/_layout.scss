@@ -1,71 +1,48 @@
-body {
-    width: 100%;
-    min-height :100vh;
-    font-family: 'Roboto', sans-serif;
-    // le layout est entièrement flexbox
+/*---------css global----------*/
+body{
+    width: 100vw;
+    min-height: 100vh;
+}
+header,nav,main,footer{
+    width: 100vw;
+    display: flex;
+}
+header{
+    background-color: $couleur_rouge;
+}
+.header-block{
+    display: none;
+}
+.ul-opacity{
+    display: block;
     display: flex;
     flex-direction: column;
 }
-
-header,
-nav,
-main,
-footer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.body-hidden{
+    overflow: hidden;
 }
-header {
-    z-index: 999;
-   // flex:1;
+.nav-height{
+    height: 100vh;
 }
-
-header,
-footer {
-    // chaque section pricipale une couleur en bg sur 100vw
-    background-color: lighten($couleur_rouge, 20%);
+main section:first-child,header section{
+    margin:0 2vw;
 }
-
-nav {
-    background-color: darken($couleur_rouge, 5%);
+nav{
+    background-color: darken($couleur_noire, 10%);
 }
-
-main {
-    
-    padding-top : 3em;
-    display : flex;
-    flex-direction: column; // pour pousser le footer en bas du viewport
-    align-items: center; // pour que la section .global soit centrée
-    justify-content: center;
-    flex : 1 1 auto; // pour pousser le footer en bas du viewport
-    background-color: lighten($couleur_rouge, 70%);
-    color :  darken($couleur_blanc, 30%);
-    
-    section {
-        display : flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: flex-start;
-        p {
-
-            flex : 1 1 20%;  // les paragraphes on une hauteur de 20%
-        }
-    }
+main{
+    background-color: lighten($couleur_rouge,20%);
 }
-
-
-
-.global {
+footer{
+    background-color: $couleur_rouge;
+}
+.global{
     width: 95%;
-
 }
-
-// ---------------------------------------------------------------- un premier point de rupture 
-@media screen and (min-width:600px) {
-    .global {
-        width: 80%;
+/*---------MEDIA QUERIES----------*/
+@media screen and (min-width: 600px)
+{
+    .global{
+        width: 85%;
     }
-
-
-
 }
