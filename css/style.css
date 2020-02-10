@@ -18,9 +18,32 @@
   animation-duration: 1.5s;
 }
 
-.animationOpacity, .section-ul li, .animationOpaciteSection, .section-slider h1:first-child, header section h1 {
+.animationOpacity, .section-ul li, .section-slider h1:first-child, header section h1 {
   -webkit-animation: menuOpacite 2s;
           animation: menuOpacite 2s;
+}
+
+.animationSection, .animationOpaciteSection {
+  -webkit-animation: fadeIn 2s forwards;
+          animation: fadeIn 2s forwards;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*# variables*/
