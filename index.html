@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tp1 développement d'une page intéractive animée entièrement adaptative</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <ul class="global">
+            <li><a href="">Calendrier</a></li>
+            <li><a href="">projet</a></li>
+            <li><a href="">vie étudiante</a></li>
+        </ul>
+    </nav>
+    <header>
+        <section class="global">
+            <h1>Site utilitaire perso</h1>
+        </section>
+    </header>
+    <main>
+        <section class="global">
+            <div class="calendrier">
+                cette section va comprendre le calendrier d'horraire d'un élève en multimédia
+            </div>
+        </section>
+        <section>
+            <div class="carousel">
+                cette section va comprendre le carousel
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            cette section va comprendre des coordonnées
+        </div>
+    </footer>
+</body>
+<script>
+    function myFunction(x) {
+        x.classList.toggle("change");
+        var element = document.querySelector("nav");
+        element.classList.toggle("nav-height");
+        var elementUl = document.querySelector("ul");
+        elementUl.classList.toggle("ul-opacity");
+        var elementHeader = document.querySelector("header");
+        elementHeader.classList.toggle("header-block");
+        var hiddenBoddy = document.querySelector("body");
+        hiddenBoddy.classList.toggle("body-hidden");
+        var hiddenBoddy = document.querySelector("body");
+        hiddenBoddy.classList.toggle("body-hidden");
+        var section2 = document.querySelector("main section:nth-of-type(1)");
+        section2.classList.toggle("header-block");
+        var footer = document.querySelector("footer");
+        footer.classList.toggle("header-block");
+    }   
+</script>
+</html>
