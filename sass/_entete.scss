@@ -1,0 +1,49 @@
+
+// Styles concernant la barre d'information
+
+#barreInfo {
+    display: none;
+}
+
+@media screen and (min-width:600px) {
+    #barreInfo {
+        box-sizing: border-box;
+        width: 100%;
+        text-align: right;
+        background-color: #381717;
+        color: $couleurTxt;
+        display: flex;
+        justify-content: flex-end;
+        padding: .5em;
+
+
+        p {
+            padding: 1px 1em;
+            margin: 0;
+            
+        }
+
+        div {
+            border: 1px solid $couleurTxt;
+            padding: 0 1em;
+            display: flex;
+            
+            p {
+                padding: 0 0;
+
+                span {
+                    user-select: all;
+                }
+            }
+            
+            i {
+                padding-left: 2em;
+            }
+        }
+
+        div:active {
+            content: none;
+            color: white;
+        }
+    }
+}

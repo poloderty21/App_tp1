@@ -1,0 +1,467 @@
+@charset "UTF-8";
+/*!
+Auteur: Eddy Martin
+Description: Gabarit de base permettant d'explorer Sass et différents techniques CSS
+Version: 1.0.0
+License: GNU General Public License v2 or later
+
+*/
+/*--------------------------------------------------------------
+>>> LISTE DES FICHIERS SCSS IMPORTÉS 
+----------------------------------------------------------------
+# Variables
+# Typography
+# Extend
+# Mixins
+# Layout
+# Elements
+# Navigation
+# Entete
+# Pied-page
+
+
+----------------------------------------------------------------
+# Variables
+--------------------------------------------------------------*/
+/*----------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Extend
+----------------------------------------------------------------*/
+.footerLiBase, #pied-page .list-1, #pied-page .list-2, #pied-page .list-3, #pied-page .list-4 {
+  color: #abc4dd;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+/*--------------------------------------------------------------
+# Mixins
+----------------------------------------------------------------*/
+/* ------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header,
+nav,
+main,
+footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header {
+  z-index: 999;
+}
+
+header,
+footer {
+  background-color: #a44444;
+}
+
+nav {
+  background-color: #4a1f1f;
+}
+
+main {
+  padding-top: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  background-color: #f8efef;
+  color: #676262;
+}
+
+main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main section p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20%;
+          flex: 1 1 20%;
+}
+
+.global {
+  width: 95%;
+}
+
+@media screen and (min-width: 600px) {
+  .global {
+    width: 80%;
+  }
+}
+
+/* ------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+/* Les éléments simples.  
+On définit ici des règles de styles générales qui peuvent être enrichies ailleur.
+Ces règles servent de bases  
+*/
+header {
+  color: #b19090;
+}
+
+header h1 {
+  font-size: 3em;
+  padding: 1rem 0 .1rem 0;
+  margin: 0;
+}
+
+header h2 {
+  font-size: 1em;
+  padding: 0 0 20px 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 500px) {
+  header h1 {
+    font-size: 5em;
+    margin: 0;
+  }
+  header h2 {
+    font-size: 1em;
+    margin: 0;
+  }
+}
+
+/* ------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/* 
+le menu est contrôlé par une case à cocher
+l'état checked est testé ici:
+*/
+#checkMenu:checked ~ ul {
+  max-height: 200px;
+}
+
+#checkMenu:checked ~ ul > li {
+  opacity: 1;
+}
+
+#checkMenu:checked ~ #btnMenu {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  color: #0f0;
+}
+
+#checkMenu {
+  display: none;
+}
+
+#btnMenu {
+  display: block;
+  color: #fff;
+  font-size: 2em;
+  -webkit-transform-origin: 50% 60%;
+          transform-origin: 50% 60%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: absolute;
+  width: 30px;
+  height: 32px;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  left: 10px;
+  top: 5px;
+  cursor: pointer;
+}
+
+#menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 110px;
+  background-color: #381717;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 40px;
+}
+
+#menu ul {
+  width: 100vw;
+  margin-left: -20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style-type: none;
+  max-height: 0px;
+  height: auto;
+  -webkit-transition: max-height 1s;
+  transition: max-height 1s;
+  background-color: #381717;
+  overflow: hidden;
+}
+
+#menu ul li {
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 6px 3px 3px 30px;
+  color: #b3afaf;
+}
+
+#menu ul li a:hover {
+  background-color: #a44444;
+  color: #fff;
+}
+
+#menu ul li a:last-child {
+  padding-bottom: 15px;
+}
+
+@media screen and (min-width: 500px) {
+  #btnMenu {
+    display: none;
+  }
+  #menu {
+    position: static;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #menu ul {
+    height: 26px;
+    margin: 0;
+    margin-left: 2%;
+    overflow: visible;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    opacity: 1;
+  }
+  #menu ul li {
+    opacity: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: center;
+    vertical-align: center;
+  }
+  #menu ul li a {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: 26px;
+    padding-top: 11px;
+  }
+  #menu ul li a:hover {
+    background-color: #803535;
+  }
+}
+
+/*--------------------------------------------------------------
+# Entete 
+----------------------------------------------------------------*/
+#barreInfo {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  #barreInfo {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    text-align: right;
+    background-color: #381717;
+    color: #b3afaf;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: .5em;
+  }
+  #barreInfo p {
+    padding: 1px 1em;
+    margin: 0;
+  }
+  #barreInfo div {
+    border: 1px solid #b3afaf;
+    padding: 0 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #barreInfo div p {
+    padding: 0 0;
+  }
+  #barreInfo div p span {
+    -webkit-user-select: all;
+       -moz-user-select: all;
+        -ms-user-select: all;
+            user-select: all;
+  }
+  #barreInfo div i {
+    padding-left: 2em;
+  }
+  #barreInfo div:active {
+    content: none;
+    color: white;
+  }
+}
+
+/*--------------------------------------------------------------
+# Pied-page 
+----------------------------------------------------------------*/
+/*
+mobile : 1 colonne
+tablette : 2 colonnes
+desktop : 4 colonnes
+*/
+#pied-page {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #ccc9c9;
+}
+
+#pied-page section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#pied-page ul {
+  padding: 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0 10px 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  border: 3px dotted #993f3f;
+}
+
+#pied-page ul li {
+  padding: 3px;
+}
+
+#pied-page .list-1 {
+  color: white;
+  font-size: 1.5em;
+}
+
+@media screen and (min-width: 500px) {
+  #pied-page section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  #pied-page ul {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40%;
+            flex: 1 1 40%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #pied-page section {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #pied-page ul {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 25%;
+            flex: 1 1 25%;
+  }
+}
+
+/*--------------------------------------------------------------*/
+/*# sourceMappingURL=style.css.map */

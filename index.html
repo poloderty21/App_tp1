@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TP1</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="barreInfo">
+        <p><i class="fa fa-phone"></i> (514) 555-5555</p>
+        <p><i class="fa fa-envelope"></i> magicbrand@email.com</p>
+        <div>
+            <p contenteditable="true" for="checkSearch"><span>Recherche</span></p>
+            <i class="fa fa-search"></i>
+        </div>
+    </div>     
+    <header>        
+        <section class="global">           
+            <h1>TP #1</h1>
+            <h2>Introduction à Sass</h2>
+        </section>        
+    </header>
+
+    <nav id='menu'>
+            <input id="checkMenu" type="checkbox">
+            <label id="btnMenu" for="checkMenu">&#9776;</label>
+            <ul>
+                <li><a href="">Lorem</a></li>
+                <li><a href="">Vero</a></li>
+                <li><a href="">Aperiam</a></li>
+                <li><a href="">Reprehenderit</a></li>
+                <li><a href="">Incidunt</a></li>
+                <li><a href="">Est</a></li>
+            </ul>
+    </nav>
+    <main>
+        <section class="global">
+       
+            <h1>SCSS, Sassy CSS et Sass</h1>
+            <p>
+                La différence est l'interface utilisateur. Sous l'extérieur textuel, ils sont identiques. C'est pourquoi les fichiers
+                sass et scss peuvent s'importer.
+            </p>
+            <p>
+                En fait, Sass a quatre analyseurs syntaxiques: scss, sass, CSS et LESS. Tous ces
+                éléments convertissent une syntaxe différente en une arborescence de syntaxe abstraite qui est ensuite traitée en sortie
+                CSS ou même dans l'un des autres formats via l'outil sass-convert.
+            </p>
+            <p>
+                Utilisez la syntaxe que vous préférez, les deux sont entièrement pris en charge et vous pouvez les changer plus tard si
+                vous changez d'avis.
+            </p>
+            <p>
+                L'avantage du format SCSS c'est que l'on peut directement importer un fichier CSS et il sera considéré directement comme du SCSS par le compilateur Sass. La conversion est plus facile que si on utilise un fichier .sass
+            </p>            
+        </section>
+    </main>
+
+    <footer id='pied-page'>
+        <section class="global">
+            <ul class="list-1">
+                <li>Lorem, ipsum</li>
+                <li>Soluta, distinctio</li>
+                <li>Non, praesentium</li>
+                <li>Cupiditate, deserunt</li>
+                <li>Error, laborum</li>
+            </ul>
+            <ul class="list-2">
+                <li>Dolore, architecto</li>
+                <li>Illo, ipsum</li>
+                <li>Impedit, laborum</li>
+                <li>Dolores, quisquam</li>
+                <li>Cupiditate, dolores</li>
+            </ul>
+            <ul class="list-3">
+                <li>Distinctio, iste</li>
+                <li>Porro, repellat</li>
+                <li>Cumque, eligendi</li>
+                <li>Suscipit, enim</li>
+                <li>Sapiente, impedit</li>
+            </ul>
+            <ul class="list-4">
+                <li>Voluptates, culpa</li>
+                <li>Harum, adipisci</li>
+                <li>Recusandae, ipsam</li>
+                <li>Delectus, dolores</li>
+                <li>Animi, voluptatum</li>
+            </ul>
+        </section>
+    </footer>
+</body>
+<script>
+    window.addEventListener('load', function () {
+        let elmChkMenu = document.querySelector('#checkMenu')
+        let elmBtnMenu = document.querySelector('#btnMenu')
+
+        window.addEventListener('resize', function () {
+            // console.log(window.innerWidth)
+            if (window.innerWidth >= 500) {
+                elmChkMenu.checked = false
+            }
+        })
+    })
+</script>
+</html>
