@@ -10,12 +10,23 @@
    # Menu
    # Style
 */
+/*# variables*/
+/*---------variable couleurs----------*/
 /*# typography*/
 /*# mixins*/
 /*# carousel*/
 /*# elements*/
+h3 {
+  margin-top: 0;
+}
+
 /*# footer*/
 /*---------section footer----------*/
+footer {
+  padding: 1em 0;
+  text-align: center;
+}
+
 footer div.social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,11 +36,34 @@ footer div.social {
           justify-content: center;
 }
 
+footer div.social a {
+  background-color: #333333;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin: 0 .2em;
+}
+
+footer div.social .fa-facebook-f, footer div.social .fa-twitter {
+  font-size: 1.5em;
+  color: #fff;
+  padding-top: 11px;
+}
+
 /*---------MEDIA QUERIES----------*/
 /*---------MEDIA QUERIES----------*/
+@media screen and (min-width: 768px) {
+  footer div.social a {
+    width: 65px;
+    height: 65px;
+  }
+  footer div.social .fa-facebook-f, footer div.social .fa-twitter {
+    font-size: 2em;
+    padding-top: 16px;
+  }
+}
+
 /*# header*/
-/*# variables*/
-/*---------variable couleurs----------*/
 /*# layout*/
 /*---------css global----------*/
 .pleineLargeur {

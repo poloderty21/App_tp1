@@ -2,14 +2,25 @@
 
 /*---------section footer----------*/
 footer {
-
+    padding: 1em 0;
+    text-align: center;
 
     div.social {
         display: flex;
         justify-content: center;
 
         a {
-            // background-color: ;
+            background-color: $couleur_gris;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;       
+            margin: 0 .2em;
+        }
+
+        .fa-facebook-f, .fa-twitter {
+            font-size: 1.5em;
+            color: $couleur_blanche;
+            padding-top: 11px;
         }
     }
 }
@@ -21,5 +32,17 @@ footer {
 }
 /*---------MEDIA QUERIES----------*/
 @media screen and (min-width:768px){
-    
+    footer {    
+        div.social {
+            a {           
+                width: 65px;
+                height: 65px;
+            }
+
+            .fa-facebook-f, .fa-twitter {
+                font-size: 2em;           
+                padding-top: 16px;
+            }
+        }
+    }
 }
