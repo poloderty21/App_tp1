@@ -37,6 +37,8 @@ nav{
     background-color: darken($couleur_noire, 10%);
 }
 main{
+    display: flex;
+    flex-direction: column;
     background-color: lighten($couleur_rouge,20%);
 }
 footer{
