@@ -10,10 +10,27 @@
    # Menu
    # Style
 */
-/*
-   # Variable
-*/
+/*# typography*/
+/*# mixins*/
+/*# carousel*/
+/*# elements*/
+/*# footer*/
+/*---------section footer----------*/
+footer div.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*---------MEDIA QUERIES----------*/
+/*---------MEDIA QUERIES----------*/
+/*# header*/
+/*# variables*/
 /*---------variable couleurs----------*/
+/*# layout*/
 /*---------css global----------*/
 .pleineLargeur {
   width: 100%;
@@ -85,6 +102,7 @@ footer {
   }
 }
 
+/*# menu*/
 /*---------section menu----------*/
 nav ul {
   list-style: none;
@@ -164,17 +182,4 @@ nav a {
     display: none;
   }
 }
-
-/*---------section footer----------*/
-footer div.social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-/*---------MEDIA QUERIES----------*/
-/*---------MEDIA QUERIES----------*/
 /*# sourceMappingURL=style.css.map */
