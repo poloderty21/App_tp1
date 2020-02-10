@@ -10,7 +10,8 @@
    # Menu
    # Style
 */
-
+/*# variables*/
+@import "_variables.scss";
 /*# typography*/
 @import "_typography.scss";
 /*# mixins*/
@@ -23,8 +24,6 @@
 @import "_footer.scss";
 /*# header*/
 @import "_header.scss";
-/*# variables*/
-@import "_variables.scss";
 /*# layout*/
 @import "_layout.scss";
 /*# menu*/

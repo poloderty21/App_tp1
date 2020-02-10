@@ -10,6 +10,8 @@
    # Menu
    # Style
 */
+/*# variables*/
+/*---------variable couleurs----------*/
 /*# typography*/
 /*# mixins*/
 /*# carousel*/
@@ -28,8 +30,6 @@ footer div.social {
 /*---------MEDIA QUERIES----------*/
 /*---------MEDIA QUERIES----------*/
 /*# header*/
-/*# variables*/
-/*---------variable couleurs----------*/
 /*# layout*/
 /*---------css global----------*/
 .pleineLargeur {
