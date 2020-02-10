@@ -1,9 +1,15 @@
 /*---------css global----------*/
+
+
+.pleineLargeur {
+    width: 100%;
+}
+
 body{
     width: 100vw;
     min-height: 100vh;
 }
-header,nav,main,footer{
+header,nav,main{
     width: 100vw;
     display: flex;
 }
