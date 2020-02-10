@@ -10,10 +10,69 @@
    # Menu
    # Style
 */
-/*
-   # Variable
-*/
+/*# typography*/
+/*# mixins*/
+/*# carousel*/
+/*# elements*/
+/*# footer*/
+/*---------section footer----------*/
+section {
+  text-align: center;
+}
+
+section ul {
+  padding: 0;
+}
+
+section li {
+  font-size: 16px;
+  list-style: none;
+}
+
+/*---------MEDIA QUERIES----------*/
+@media screen and (min-width: 600px) {
+  footer section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer section ul {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+  }
+}
+
+/*---------MEDIA QUERIES----------*/
+@media screen and (min-width: 768px) {
+  main section:first-child {
+    font-size: 20px;
+  }
+  footer section {
+    height: 25vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer section ul {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 25%;
+            flex: 1 1 25%;
+  }
+  footer section li {
+    font-size: 22px;
+  }
+}
+
+/*# header*/
+/*# variables*/
 /*---------variable couleurs----------*/
+/*# layout*/
 /*---------css global----------*/
 body {
   width: 100vw;
@@ -81,6 +140,7 @@ footer {
   }
 }
 
+/*# menu*/
 /*---------section menu----------*/
 nav ul {
   list-style: none;
@@ -158,60 +218,6 @@ nav a {
   }
   .container {
     display: none;
-  }
-}
-
-/*---------section footer----------*/
-section {
-  text-align: center;
-}
-
-section ul {
-  padding: 0;
-}
-
-section li {
-  font-size: 16px;
-  list-style: none;
-}
-
-/*---------MEDIA QUERIES----------*/
-@media screen and (min-width: 600px) {
-  footer section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  footer section ul {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 50%;
-            flex: 1 1 50%;
-  }
-}
-
-/*---------MEDIA QUERIES----------*/
-@media screen and (min-width: 768px) {
-  main section:first-child {
-    font-size: 20px;
-  }
-  footer section {
-    height: 25vh;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  footer section ul {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 25%;
-            flex: 1 1 25%;
-  }
-  footer section li {
-    font-size: 22px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -11,14 +11,23 @@
    # Style
 */
 
-/*
-   # Variable
-*/
+/*# typography*/
+@import "_typography.scss";
+/*# mixins*/
+@import "_mixins.scss";
+/*# carousel*/
+@import "_carousel.scss";
+/*# elements*/
+@import "_elements.scss";
+/*# footer*/
+@import "_footer.scss";
+/*# header*/
+@import "_header.scss";
+/*# variables*/
 @import "_variables.scss";
-
+/*# layout*/
 @import "_layout.scss";
-
+/*# menu*/
 @import "_menu.scss";
 
-@import "_footer.scss";
 
