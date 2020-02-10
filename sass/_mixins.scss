@@ -2,3 +2,12 @@
     from {opacity: $opacityStart} 
     to {opacity: $opacityEnd}
   }
+
+
+  @mixin positionnerCours ($nthChild, $numCol, $numRow , $nbHeures, $bgColor) {
+    div:nth-child(#{$nthChild}) {
+      background-color: $bgColor;
+      grid-column: $numCol;
+      grid-row: #{$numRow} / #{$numRow+$nbHeures};
+    }
+  }

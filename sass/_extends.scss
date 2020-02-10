@@ -4,4 +4,10 @@
     animation-name: fade;
     animation-duration: 1.5s;
   }
+
+%child-grid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+}
  
