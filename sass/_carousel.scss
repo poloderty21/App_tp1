@@ -16,7 +16,7 @@
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: $couleur_noire;
+    color: $couleur_blanche;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -38,13 +38,13 @@
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: $couleur_rouge;
+    background-color: $couleur_blanche;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
   }
   .active, .dot:hover {
-    background-color: $couleur_noire;
+    background-color: #4d4dff;
   }
   /* Fading animation */
   .fade {

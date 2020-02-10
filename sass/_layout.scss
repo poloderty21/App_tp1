@@ -14,7 +14,15 @@ header,nav,main{
     display: flex;
 }
 header{
-    background-color: $couleur_rouge;
+    background-color: $couleur_noire;
+}
+.section-slider h1:first-child{
+    color: $couleur_blanche;
+    text-align: center;
+}
+header section h1{
+    color:$couleur_blanche;
+    text-align: center;
 }
 .header-block{
     display: none;
@@ -37,7 +45,9 @@ nav{
     background-color: darken($couleur_noire, 10%);
 }
 main{
-    background-color: lighten($couleur_rouge,20%);
+    display: flex;
+    flex-direction: column;
+    background-color: lighten($couleur_noire,10%);
 }
 footer{
     background-color: $couleur_rouge;
