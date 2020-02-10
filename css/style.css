@@ -18,7 +18,7 @@
   animation-duration: 1.5s;
 }
 
-.animationOpacity, .section-ul li, .section-slider h1:first-child, header section h1 {
+.animationOpacity, .section-ul li, .animationOpaciteSection, .section-slider h1:first-child, header section h1 {
   -webkit-animation: menuOpacite 2s;
           animation: menuOpacite 2s;
 }
@@ -272,6 +272,21 @@ footer {
 @media screen and (min-width: 600px) {
   .global {
     width: 85%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .pleineLargeur h3 {
+    opacity: 0;
+  }
+  .social {
+    opacity: 0;
+  }
+  .navigation {
+    opacity: 0;
+  }
+  .copyright {
+    opacity: 0;
   }
 }
 
