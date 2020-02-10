@@ -1,6 +1,5 @@
 /*---------css global----------*/
 
-
 .pleineLargeur {
     width: 100%;
 }
@@ -24,11 +23,13 @@ header{
 }
 .section-slider h1:first-child{
     color: $couleur_blanche;
+    @extend .animationOpacity;
     text-align: center;
 }
 header section h1{
     color:$couleur_blanche;
     text-align: center;
+    @extend .animationOpacity;
 }
 .header-block{
     display: none;
