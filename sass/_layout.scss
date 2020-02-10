@@ -16,6 +16,14 @@ header,nav,main{
 header{
     background-color: $couleur_rouge;
 }
+.section-slider h1:first-child{
+    color: white;
+    text-align: center;
+}
+header section h1{
+    color:$couleur_blanche;
+    text-align: center;
+}
 .header-block{
     display: none;
 }

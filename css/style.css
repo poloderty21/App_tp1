@@ -139,6 +139,16 @@ header {
   background-color: #612424;
 }
 
+.section-slider h1:first-child {
+  color: white;
+  text-align: center;
+}
+
+header section h1 {
+  color: #fff;
+  text-align: center;
+}
+
 .header-block {
   display: none;
 }
