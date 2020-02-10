@@ -63,7 +63,7 @@
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: #fff;
+  background-color: #dfdfdf;
 }
 
 /* The dots/bullets/indicators */
@@ -103,16 +103,13 @@
 }
 
 /*# elements*/
-h3 {
-  margin-top: 0;
-}
-
 /*# footer*/
 /*---------section footer----------*/
 footer {
   font-family: "Roboto", sans-serif;
   padding: 1em 0;
   text-align: center;
+  color: #dfdfdf;
 }
 
 footer h3 {
@@ -129,7 +126,7 @@ footer div.social {
 }
 
 footer div.social a {
-  background-color: #333333;
+  background-color: #ab4040;
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -138,12 +135,23 @@ footer div.social a {
 
 footer div.social .fa-facebook-f, footer div.social .fa-twitter {
   font-size: 1.5em;
-  color: #fff;
   padding-top: 11px;
+  color: #dfdfdf;
 }
 
 footer div.navigation ul {
   list-style: none;
+  padding: 0;
+}
+
+footer div.navigation ul li {
+  display: inline-block;
+  margin: 0 .5em;
+}
+
+footer div.navigation ul li a {
+  text-decoration: none;
+  color: #dfdfdf;
 }
 
 footer p.copyright {
@@ -255,7 +263,7 @@ nav li {
 nav a {
   font-size: 14px;
   text-decoration: none;
-  color: #fff;
+  color: #dfdfdf;
   font-weight: bold;
 }
 
@@ -269,7 +277,7 @@ nav a {
 .container .bar1, .container .bar2, .container .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #fff;
+  background-color: #dfdfdf;
   margin: 6px 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
