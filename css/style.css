@@ -23,8 +23,13 @@ h3 {
 /*# footer*/
 /*---------section footer----------*/
 footer {
+  font-family: "Roboto", sans-serif;
   padding: 1em 0;
   text-align: center;
+}
+
+footer h3 {
+  text-transform: uppercase;
 }
 
 footer div.social {
@@ -48,6 +53,10 @@ footer div.social .fa-facebook-f, footer div.social .fa-twitter {
   font-size: 1.5em;
   color: #fff;
   padding-top: 11px;
+}
+
+footer p.copyright {
+  font-size: .8em;
 }
 
 /*---------MEDIA QUERIES----------*/

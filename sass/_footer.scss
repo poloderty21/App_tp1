@@ -2,8 +2,13 @@
 
 /*---------section footer----------*/
 footer {
+    font-family: $font1;
     padding: 1em 0;
     text-align: center;
+
+    h3 {
+        text-transform: uppercase;
+    }
 
     div.social {
         display: flex;
@@ -22,6 +27,14 @@ footer {
             color: $couleur_blanche;
             padding-top: 11px;
         }
+    }
+
+    div.navigation {
+        
+    }
+
+    p.copyright {
+        font-size: .8em;
     }
 }
 
