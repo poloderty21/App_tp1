@@ -2,3 +2,7 @@
     from {opacity: $opacityStart} 
     to {opacity: $opacityEnd}
   }
+  @mixin animationOpacity($opacityStart,$opacityEnd) {
+    from {opacity: $opacityStart} 
+    to {opacity: $opacityEnd}
+  }

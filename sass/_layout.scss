@@ -13,6 +13,12 @@ header,nav,main{
     width: 100vw;
     display: flex;
 }
+@-webkit-keyframes menuOpacite {
+    @include animationOpacity(0,1);
+}
+.section-ul li{
+    @extend .animationOpacity;
+}
 header{
     background-color: $couleur_noire;
 }
