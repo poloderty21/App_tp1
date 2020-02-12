@@ -1,13 +1,30 @@
+
+
 @mixin faceOpacity($opacityStart,$opacityEnd) {
     from {opacity: $opacityStart} 
     to {opacity: $opacityEnd}
   }
 
 
+/*
+Positionne le cours dans la grille des cours avec :
+$nthChild -> le combientième dans le div des cours
+$numCol -> Le numéro de la colone représentant le jour de la semaine (1 = lundi / 5 = vendredi)
+$numRow -> Le Numéro de l'heure de commencement du cours (1=8h / 5=12h / 10=17h)
+$nbHeures -> La durée du cours en heures
+$bgColor -> la couleur d'affichage du cours
+*/
   @mixin positionnerCours ($nthChild, $numCol, $numRow , $nbHeures, $bgColor) {
     div:nth-child(#{$nthChild}) {
       background-color: $bgColor;
       grid-column: $numCol;
       grid-row: #{$numRow} / #{$numRow+$nbHeures};
     }
+  }
+
+
+  @mixin child-grid() {    
+    display: grid;
+    width: 100%;
+    height: 100%;
   }

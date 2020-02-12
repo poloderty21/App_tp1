@@ -34,6 +34,11 @@ header section h1{
     text-align: center;
     @extend .animationOpacity;
 }
+main h2{
+    color:$couleur_blanche;
+    text-align: center;
+    @extend .animationOpacity;
+}
 .header-block{
     display: none;
 }

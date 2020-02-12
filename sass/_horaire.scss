@@ -1,16 +1,29 @@
 
 
 #calendrier {
-    margin: 0;
-    padding: 0 1em;
+    max-width: 1000px; 
+    padding: 0;
     color: white;
+    font-size: .8em;
+    border: 2px solid $couleur_rouge;
     display: grid;
     grid-template-areas: ". jours"
                         "heures cours";
-    grid-template-columns: 1fr 5fr;    
-    grid-template-rows: 1fr 10fr;
+    grid-template-columns: .5fr 5fr;    
+    grid-template-rows: .5fr 10fr;
 
     text-align: center;
+
+    #jours > div, #heures > div, #cours > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+    }
+
+    p {
+        margin: .2em;
+    }
 
     #jours {        
         grid-area: jours;
@@ -31,33 +44,88 @@
         grid-template-rows: repeat(10, 1fr);
 
         // ProgVeille
-        @include positionnerCours(1, 1, 1, 4, red);
+        @include positionnerCours(1, 1, 1, 4, $c_cours1);
 
         // PauseCommune
-        @include positionnerCours(2, 2, 5, 2, blue);
+        @include positionnerCours(2, 2, 5, 2, $c_cours2);
 
         // ProjetFin
-        @include positionnerCours(3, 2, 7, 4, cyan);
+        @include positionnerCours(3, 2, 7, 4, $c_cours3);
 
         // CreationVid
-        @include positionnerCours(4, 3, 1, 3, violet);
+        @include positionnerCours(4, 3, 1, 3, $c_cours4);
 
         // Stage
-        @include positionnerCours(5, 3, 4, 1, purple);
+        @include positionnerCours(5, 3, 4, 1, $c_cours5);
 
         // ProjetFin
-        @include positionnerCours(6, 3, 6, 5, cyan);
+        @include positionnerCours(6, 3, 6, 5, $c_cours3);
 
         // PauseCommune
-        @include positionnerCours(7, 4, 4, 2, blue);
+        @include positionnerCours(7, 4, 4, 2, $c_cours2);
 
         // CreationVid
-        @include positionnerCours(8, 5, 1, 3, violet);
+        @include positionnerCours(8, 5, 1, 3, $c_cours4);
 
         // ProgVeille
-        @include positionnerCours(9, 5, 5, 4, red);
+        @include positionnerCours(9, 5, 5, 4, $c_cours1);
 
 
     }
 
+}
+
+
+
+@media screen and (min-width: 768px)
+{
+    #calendrier {
+        font-size: 1em;
+        margin: 0 auto;       
+        grid-template-areas: ". jours"
+                            "heures cours";
+        grid-template-columns: 1fr 5fr;    
+        grid-template-rows: 1fr 10fr;        
+       
+    
+        p {
+            margin: 1em;
+        }
+          
+      
+    }
+}
+
+@media screen and (min-width: 960px)
+{
+    #calendrier {
+        font-size: 1em;
+        margin: 0 auto;       
+        grid-template-areas: ". jours"
+                            "heures cours";
+        grid-template-columns: 1fr 5fr;    
+        grid-template-rows: 1fr 10fr;        
+       
+    
+        p {
+            margin: 1em;
+        }
+          
+      
+    }
+}
+@media screen and (min-width: 1200px)
+{
+    #calendrier {
+             
+        grid-template-areas: ". jours"
+                            "heures cours";
+        grid-template-columns: 1fr 5fr;    
+        grid-template-rows: 1fr 10fr;        
+       
+    
+       
+          
+      
+    }
 }
