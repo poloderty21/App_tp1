@@ -237,13 +237,12 @@ header, nav, main {
   display: flex;
 }
 
-@-webkit-keyframes menuOpacite {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.menuOpacite from {
+  opacity: 0;
+}
+
+.menuOpacite to {
+  opacity: 1;
 }
 
 header {
@@ -422,6 +421,7 @@ nav a {
 #calendrier {
   max-width: 1000px;
   padding: 0;
+  margin: 0 auto;
   color: white;
   font-size: .8em;
   border: 2px solid #612424;
@@ -562,40 +562,9 @@ nav a {
 @media screen and (min-width: 768px) {
   #calendrier {
     font-size: 1em;
-    margin: 0 auto;
-        grid-template-areas: ". jours" "heures cours";
-    -ms-grid-columns: 1fr 5fr;
-        grid-template-columns: 1fr 5fr;
-    -ms-grid-rows: 1fr 10fr;
-        grid-template-rows: 1fr 10fr;
   }
   #calendrier p {
     margin: 1em;
-  }
-}
-
-@media screen and (min-width: 960px) {
-  #calendrier {
-    font-size: 1em;
-    margin: 0 auto;
-        grid-template-areas: ". jours" "heures cours";
-    -ms-grid-columns: 1fr 5fr;
-        grid-template-columns: 1fr 5fr;
-    -ms-grid-rows: 1fr 10fr;
-        grid-template-rows: 1fr 10fr;
-  }
-  #calendrier p {
-    margin: 1em;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  #calendrier {
-        grid-template-areas: ". jours" "heures cours";
-    -ms-grid-columns: 1fr 5fr;
-        grid-template-columns: 1fr 5fr;
-    -ms-grid-rows: 1fr 10fr;
-        grid-template-rows: 1fr 10fr;
   }
 }
 /*# sourceMappingURL=style.css.map */

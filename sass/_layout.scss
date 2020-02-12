@@ -12,7 +12,7 @@ body{
 header,nav,main{
     display: flex;
 }
-@-webkit-keyframes menuOpacite {
+.menuOpacite {
     @include faceOpacity(0,1);
 }
 .section-ul li{

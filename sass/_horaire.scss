@@ -3,6 +3,7 @@
 #calendrier {
     max-width: 1000px; 
     padding: 0;
+    margin: 0 auto;
     color: white;
     font-size: .8em;
     border: 2px solid $couleur_rouge;
@@ -69,10 +70,7 @@
 
         // ProgVeille
         @include positionnerCours(9, 5, 5, 4, $c_cours1);
-
-
     }
-
 }
 
 
@@ -81,13 +79,8 @@
 {
     #calendrier {
         font-size: 1em;
-        margin: 0 auto;       
-        grid-template-areas: ". jours"
-                            "heures cours";
-        grid-template-columns: 1fr 5fr;    
-        grid-template-rows: 1fr 10fr;        
        
-    
+       
         p {
             margin: 1em;
         }
@@ -98,34 +91,9 @@
 
 @media screen and (min-width: 960px)
 {
-    #calendrier {
-        font-size: 1em;
-        margin: 0 auto;       
-        grid-template-areas: ". jours"
-                            "heures cours";
-        grid-template-columns: 1fr 5fr;    
-        grid-template-rows: 1fr 10fr;        
-       
     
-        p {
-            margin: 1em;
-        }
-          
-      
-    }
 }
 @media screen and (min-width: 1200px)
 {
-    #calendrier {
-             
-        grid-template-areas: ". jours"
-                            "heures cours";
-        grid-template-columns: 1fr 5fr;    
-        grid-template-rows: 1fr 10fr;        
-       
     
-       
-          
-      
-    }
 }
