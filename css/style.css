@@ -328,7 +328,7 @@ footer {
 }
 
 /*---------section vie étudiante----------*/
-#vie-etudiante > div:first-child {
+.vie-etudiante > div:first-child {
   color: white;
   display: -ms-grid;
   display: grid;
@@ -338,8 +338,12 @@ footer {
       grid-template-rows: 3;
 }
 
-#vie-etudiante div {
+.vie-etudiante div {
   text-align: center;
+}
+
+.display-hide {
+  display: none;
 }
 
 /*---------MEDIA QUERIES----------*/
