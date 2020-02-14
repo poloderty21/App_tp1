@@ -237,6 +237,11 @@ header, nav, main {
   display: flex;
 }
 
+a {
+  text-decoration: underline;
+  color: #dfdfdf;
+}
+
 .menuOpacite from {
   opacity: 0;
 }
@@ -428,7 +433,7 @@ nav a {
   border: 2px solid #612424;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: ". jours" "heures cours";
+      grid-template-areas: ". jours" "heures cours";
   -ms-grid-columns: .5fr 5fr;
       grid-template-columns: .5fr 5fr;
   -ms-grid-rows: .5fr 10fr;

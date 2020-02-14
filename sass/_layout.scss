@@ -14,7 +14,8 @@ header,nav,main{
     display: flex;
 }
 a{
-    text-decoration: none;
+    text-decoration: underline;
+    color: $couleur_blanche;
 }
 .menuOpacite {
     @include faceOpacity(0,1);
