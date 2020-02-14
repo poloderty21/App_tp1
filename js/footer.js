@@ -3,7 +3,8 @@ $(window).on("load",function(){
     if(screenWith>1200){
         $(window).scroll(function(){
             var y = $(window).scrollTop();
-            if(y > 150){
+            console.log(y);
+            if(y > 950){
                 var array =[];
                 array[0] = document.querySelector(".pleineLargeur h3");
                 array[1] = document.querySelector(".social");

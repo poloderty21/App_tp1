@@ -9,8 +9,12 @@ body{
     width: 100%;
     min-height: 100vh;
 }
+
 header,nav,main{
     display: flex;
+}
+a{
+    text-decoration: none;
 }
 .menuOpacite {
     @include faceOpacity(0,1);
