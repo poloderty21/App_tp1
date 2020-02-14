@@ -81,6 +81,24 @@ footer{
 .no-underline{
     text-decoration: none!important;
 }
+/*---------section vie étudiante----------*/
+#vie-etudiante{
+    color: white;
+    display: grid;
+    grid-template-columns:25% 25% 25% 25%;
+    grid-template-rows:100%;
+}
+#vie-etudiante div:nth-of-type(1){
+    grid-column-start: 2;
+    text-align: center;
+}
+
+#vie-etudiante div:nth-of-type(2){
+    grid-column-start: 3;
+    text-align: center;
+
+}
+
 /*---------MEDIA QUERIES----------*/
 @media screen and (min-width: 600px)
 {
