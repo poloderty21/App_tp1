@@ -242,6 +242,10 @@ a {
   color: #dfdfdf;
 }
 
+#cours p {
+  text-decoration: underline;
+}
+
 .menuOpacite from {
   opacity: 0;
 }
@@ -317,6 +321,10 @@ footer {
 
 .global {
   width: 95%;
+}
+
+.no-underline {
+  text-decoration: none !important;
 }
 
 /*---------MEDIA QUERIES----------*/
