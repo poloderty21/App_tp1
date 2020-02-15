@@ -17,6 +17,9 @@ a{
     text-decoration: underline;
     color: $couleur_blanche;
 }
+.vie-etudiante p:hover{
+    color: rgb(85, 79, 79);
+}
 #cours p{
     text-decoration: underline;
 }
