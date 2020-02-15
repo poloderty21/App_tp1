@@ -29,6 +29,9 @@ creationRetour = () =>{
         const para = document.createElement("p");
         para.innerHTML = "retour";
         para.classList.add("retourColor");
+        para.addEventListener("click",function(){
+            window.location.href = "/";
+        });
         element.appendChild(para);
         section.appendChild(element);
     }
@@ -66,14 +69,21 @@ changerElement = (data) =>{
 // modifier les sections avec l'objet sélectionné
 modifierTexte = (division) =>{
     const nodeListp =  document.querySelectorAll(".p-texte");
+    if(nodeListp[0].classList.contains("pChange")){
+        return
+    }
     const texte = division.texte;
     console.log(texte);
     let i = 0;
-    nodeListp.forEach(p => {
-        p.innerHTML = "";
-    });
+    let k = 0;
     nodeListp.forEach(p => {
         p.innerHTML = texte[i];
+        p.addEventListener("click",function(){
+            console.log(division.link[0]);
+            window.open(division.link[0], '_blank');
+            k++;
+        });
+        p.classList.add("pChange");
         if(p.innerHTML == "undefined"){
             p.innerHTML = "";
         }
