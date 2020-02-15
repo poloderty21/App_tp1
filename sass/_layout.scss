@@ -23,6 +23,9 @@ a{
 #cours p{
     text-decoration: underline;
 }
+#cours p:hover{
+    color: rgb(85, 79, 79);
+}
 .menuOpacite {
     @include faceOpacity(0,1);
 }
@@ -75,6 +78,9 @@ main{
     flex-direction: column;
     background-color: lighten($couleur_noire,10%);
 }
+.nohover:hover{
+    color: white!important;
+}
 footer{
     background-color: $couleur_rouge;
 }
@@ -97,7 +103,13 @@ footer{
 .display-hide{
     display: none;
 }
-
+.retourColor{
+    color:$couleur_blue;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    text-decoration: underline;
+}
 
 /*---------MEDIA QUERIES----------*/
 @media screen and (min-width: 600px)

@@ -250,6 +250,10 @@ a {
   text-decoration: underline;
 }
 
+#cours p:hover {
+  color: #554f4f;
+}
+
 .menuOpacite from {
   opacity: 0;
 }
@@ -319,6 +323,10 @@ main {
   background-color: #1a1a1a;
 }
 
+.nohover:hover {
+  color: white !important;
+}
+
 footer {
   background-color: #612424;
 }
@@ -348,6 +356,14 @@ footer {
 
 .display-hide {
   display: none;
+}
+
+.retourColor {
+  color: #4d4dff;
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 /*---------MEDIA QUERIES----------*/

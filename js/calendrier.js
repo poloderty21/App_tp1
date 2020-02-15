@@ -17,10 +17,25 @@ window.addEventListener("load",function(){
 
 //changer les textes de la vie étudiante
 const nodeListp =  document.querySelectorAll(".vie-etudiante p");
+const section = document.querySelector(".vie-etudiante>div");
+const element = document.createElement("div");
+const para = document.createElement("p");
+para.innerHTML = "retour";
+para.classList.add("retourColor");
+element.appendChild(para);
 nodeListp.forEach(p => {
     p.style.textDecoration = "underline";
     p.style.cursor = "pointer";
     p.addEventListener("click",function(evt){
-        console.log(evt.target);
+        //console.log(evt.target);
+        section.appendChild(element);
+        const data = evt.target.getAttribute("data");
+        changerElement(data);
     });
 });
+
+// Changer les éléments p 
+
+changerElement = (data) =>{
+    console.log(data);
+}
