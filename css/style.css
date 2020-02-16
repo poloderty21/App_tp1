@@ -331,6 +331,11 @@ footer {
   background-color: #612424;
 }
 
+.global h1 {
+  -webkit-transform: translateY(-400px);
+          transform: translateY(-400px);
+}
+
 .global {
   width: 95%;
 }

@@ -84,6 +84,9 @@ main{
 footer{
     background-color: $couleur_rouge;
 }
+.global h1{
+    transform: translateY(-400px);
+}
 .global{
     width: 95%;
 }

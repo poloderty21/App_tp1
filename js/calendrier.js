@@ -31,7 +31,10 @@ creationRetour = () =>{
         para.classList.add("retourColor");
         para.addEventListener("click",function(){
             //window.location.href = "/";
-            section.innerHTML = "<div><p class='p-texte' data='activite'>Activités pour les étudiants</p></div><div><p class='p-texte' data='bourse'>Bourse et aide financière</p></div><div><p class='p-texte' data='dossier'>Dossier étudiant</p></div><div><p class='p-texte' data='cours'>Cours et horraire</p></div>";
+            section.innerHTML = "<div><p class='p-texte' data='activite'>Activités pour les étudiants</p></div>"
+            + "<div><p class='p-texte' data='bourse'>Bourse et aide financière</p></div>"
+            + "<div><p class='p-texte' data='dossier'>Dossier étudiant</p></div>"
+            + "<div><p class='p-texte' data='cours'>Cours et horraire</p></div>";
             eventAdd();
         });
         element.appendChild(para);
