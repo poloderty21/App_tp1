@@ -30,7 +30,9 @@ creationRetour = () =>{
         para.innerHTML = "retour";
         para.classList.add("retourColor");
         para.addEventListener("click",function(){
-            window.location.href = "/";
+            //window.location.href = "/";
+            section.innerHTML = "<div><p class='p-texte' data='activite'>Activités pour les étudiants</p></div><div><p class='p-texte' data='bourse'>Bourse et aide financière</p></div><div><p class='p-texte' data='dossier'>Dossier étudiant</p></div><div><p class='p-texte' data='cours'>Cours et horraire</p></div>";
+            eventAdd();
         });
         element.appendChild(para);
         section.appendChild(element);
@@ -69,6 +71,7 @@ changerElement = (data) =>{
 // modifier les sections avec l'objet sélectionné
 modifierTexte = (division) =>{
     const nodeListp =  document.querySelectorAll(".p-texte");
+    console.log(nodeListp);
     if(nodeListp[0].classList.contains("pChange")){
         return
     }
