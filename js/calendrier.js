@@ -74,12 +74,12 @@ changerElement = (data) =>{
 // modifier les sections avec l'objet sélectionné
 modifierTexte = (division) =>{
     const nodeListp =  document.querySelectorAll(".p-texte");
-    console.log(nodeListp);
+    // console.log(nodeListp);
     if(nodeListp[0].classList.contains("pChange")){
         return
     }
     const texte = division.texte;
-    console.log(texte);
+    // console.log(texte);
     let i = 0;
     let k = 0;
     nodeListp.forEach(p => {
