@@ -1,7 +1,14 @@
+/*
+    Class animOpacity
+    Classe qui anime l'opacité du survole d'un autre texte
+*/
+
 export class animOpacity{
     constructor(element){
         this.element = element;
     }
+
+    
     animOpacite(){
         //console.log(this.element);
         this.element.style.opacity = "1";
