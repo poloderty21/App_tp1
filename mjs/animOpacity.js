@@ -9,9 +9,9 @@ export class animOpacity{
         const eleLi = document.createElement("li");
         eleLi.style.color = "rgb(77, 77, 255)";
         eleLi.style.position = "absolute";
-        console.log(this.element);
+        // console.log(this.element);
         this.element.appendChild(eleLi);
-        const hoverEl = this.element.childNodes;
+        // const hoverEl = this.element.childNodes;
         const array = [];
         array[0] = this.element.childNodes[1];
         array[1] = this.element.childNodes[3];
