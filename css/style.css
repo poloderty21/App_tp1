@@ -262,6 +262,10 @@ a {
   opacity: 1;
 }
 
+.section-ul {
+  opacity: 0;
+}
+
 header {
   background-color: #000;
 }

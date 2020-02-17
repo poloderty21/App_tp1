@@ -32,6 +32,9 @@ a{
 .section-ul li{
     @extend .animationOpacity;
 }
+.section-ul{
+    opacity: 0;;
+}
 header{
     background-color: $couleur_noire;
 }
