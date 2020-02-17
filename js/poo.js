@@ -1,4 +1,0 @@
-/*
-Fichier intégrant notre POO
-
-*/
